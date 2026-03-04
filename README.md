@@ -128,3 +128,43 @@ The UI includes:
 ---
 
 ## Project Structure
+.
+├── CMakeLists.txt
+├── main.cpp
+│── mainwindow.cpp
+├── mainwindow.h
+├── mainwindow.ui
+├── engine/
+│ ├── engine.cpp
+│ ├── engine.h
+│ │
+│ ├── model/
+│ │ ├── Node.h
+│ │ ├── member.h
+│ │ ├── member.cpp
+│ │ ├── Load.h
+│ │
+│ ├── loads/
+│ │ └── (load handling logic)
+│ │
+│ ├── analysis/
+│ │ └── (post-processing & results logic)
+│ │
+│ └── solver/
+│ ├── frame_solver.h
+│ └── frame_solver.cpp
+│
+├── ui/
+│ │
+│ ├── graphicsview.cpp
+│ ├── graphicsview.h
+│ │
+│ └── dialogs/
+│ ├── loaddialog.cpp
+│ ├── loaddialog.h
+│ └── loaddialog.ui
+│
+├── external/
+│ └── (third-party libraries if bundled)
+│
+└── build/ (ignored via .gitignore)
